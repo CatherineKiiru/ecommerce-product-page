@@ -3,42 +3,127 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | E-commerce product page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>E-commerce product page</title>
   </style>
 </head>
 <body>
 
-  Collections
-  Men
-  Women
-  About
-  Contact
+<!----Nav section----->
+<div class="container">
+  <nav class="nav_container">
+      <div class="nav_left-sec">
+        <img class="hidden menu" id="menu-btn" src="images/icon-menu.svg" alt="menu">
+        <img class="" src="images/logo.svg" alt="nav_logo">
+        <div class="overlay"></div>
+        <ul class="nav_links">
+          <img class="close-btn hidden" src="images/icon-close.svg" alt="close">
+          <li class="nav_link">Collections</li>
+          <li class="nav_link">Men</li>
+          <li class="nav_link">Women</li>
+          <li class="nav_link">About</li>
+          <li class="nav_link">Contact</li>
+        </ul>
+      </div>
 
-  Sneaker Company
+      <div class="nav_right-sec">
+        <div class="cart-container">
+          <button class="cart-btn">
+            <img class="cart" src="images/icon-cart.svg" alt="cart">
+          </button>
+          <div class="cart-wrp invisible">
+            <p class="cart-heading">Cart</p>
+            <div class="divider"></div>
+            <div class="cart-content empty">
+              <p>Your cart is empty</p>
+            </div>
+            <img class="delete-btn" src="./images/icon-delete.svg" alt="delete">
+          </div>
+          <img class="avatar" src="images/image-avatar.png" alt="avatar">
+        </div>
+      </div>
+    </nav>
 
-  Fall Limited Edition Sneakers
+  <!---content section--->
+  <main>
+    <section class="thumbnails">
+      <img class="main-thumbnail mobile-invisible" src="./images/image-product-1.jpg" alt="product">
+      <div class="mobile-thumbnail hidden">
+        <img class="thumb-mob" src="./images/image-product-1.jpg" alt="product">
+        <button id="next"><img src="./images/icon-next.svg" alt="next"></button>
+        <button id="previous"><img src="./images/icon-previous.svg" alt="previous"></button>
+      </div>
+      <div>
 
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
+        <div class="preview">
+          <img class="selected" src="./images/image-product-1-thumbnail.jpg" alt="product">
+          <img class="selected" src="./images/image-product-2-thumbnail.jpg" alt="product">
+          <img class="selected" src="./images/image-product-3-thumbnail.jpg" alt="product">
+          <img class="selected" src="./images/image-product-4-thumbnail.jpg" alt="product">
+        </div>
+      </div>
+    </section>
 
-  $125.00
-  50%
-  $250.00
+    <section class="content">
+      <p class="company">Sneaker Company</p>
+      <h1 class="title">Fall Limited Edition Sneakers</h1>
+      <p class="info">
+        These low-profile sneakers are your perfect casual wear companion. 
+        Featuring a durable rubber outer sole, they'll withstand everything 
+        the weather can offer.
+      </p>
 
-  0
-  Add to cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+      <div class="price">
+        <div class="new-price">
+          <p class="price-text">$125.00</p>
+          <span>50%</span>
+        </div>
+        <p class="old-price">$250.00</p>
+      </div>
+
+      <div class="buttons">
+        <div class="amount-btn">
+          <button id="minus">
+            <img src="./images/icon-minus.svg" alt="minus">
+          </button>
+          <p class="amount">0</p>
+          <button id="plus">
+            <img src="./images/icon-plus.svg" alt="plus">
+          </button>
+        </div>
+        <button class="add_btn">
+          <img src="./images/icon-cart.svg" alt="add">
+          Add to cart
+        </button>
+      </div>
+    </section>
+  </main>
+</div>
+<!----Lightbox element----->
+<div class="lightbox invisible">
+  <div class="lightbox-container">close
+    <button class="close-lightbox"><img src="./images/icon-close.svg" alt=""></button>
+    <img class="main-thumbnail invisible-mob" src="./images/image-product-1.jpg" alt="product">
+    <div class="preview">
+      <img class="selected" src="./images/image-product-1-thumbnail.jpg" alt="product">
+      <img class="selected" src="./images/image-product-2-thumbnail.jpg" alt="product">
+      <img class="selected" src="./images/image-product-3-thumbnail.jpg" alt="product">
+      <img class="selected" src="./images/image-product-4-thumbnail.jpg" alt="product">
+    </div>
   </div>
+</div>
+
+
+  
+
+
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Catherine Kiiru</a>.
+  </div> -->
 </body>
 </html>
