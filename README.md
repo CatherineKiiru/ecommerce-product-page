@@ -31,14 +31,13 @@ The challenge was to create a responsive e-commerce page. You should be able to 
 
 ### Built with
 
-- JavaScript
-- Semantic HTML5 markup
 - CSS custom properties
+- Semantic HTML5 markup
 - Flexbox
 - CSS Grid
 
 ### What I learned
-I learnt how to create a lightbox element. I also learnt how to style smaller components. The project had enough elements that required JavaScript functionality, which was excellent for my learning process. 
+I plenty of CSS concepts, but a new concept I learnt from this project was how to create a lightbox element.. The project had enough elements that required JavaScript functionality, which was excellent for my learning process. 
 
 ## Author
 
