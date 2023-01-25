@@ -37,7 +37,7 @@ The challenge was to create a responsive e-commerce page. You should be able to 
 - CSS Grid
 
 ### What I learned
-I plenty of CSS concepts, but a new concept I learnt from this project was how to create a lightbox element.. The project had enough elements that required JavaScript functionality, which was excellent for my learning process. 
+I learnt plenty of CSS concepts, but a new concept I learnt from this project was how to create a lightbox element. Generally, the project had enough elements that required JavaScript functionality, which was excellent for my learning process. 
 
 ## Author
 
